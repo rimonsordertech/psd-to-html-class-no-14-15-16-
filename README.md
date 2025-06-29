@@ -1,2 +1,4 @@
 # psd-to-html-class-no-14-15-16-
-projcet psd to html
+project PSD to HTML
+live link preview
+ https://rimonsordertech.github.io/psd-to-html-class-no-14-15-16-/
