@@ -1,0 +1,349 @@
+/* ====== Font Faces ====== */
+@font-face {
+  font-family: "Playfair Display";
+  src: url('../fonts/playfairdisplay-regular.ttf');
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url('../fonts/ubuntu-light.ttf');
+}
+
+/* ====== Reset and Common Styles ====== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #626262;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ====== Container ====== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* ====== Header ====== */
+header {
+  padding: 40px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  float: left;
+  width: 15%;
+}
+
+.logo img {
+  width: 100%;
+  display: block;
+}
+
+.menu {
+  float: right;
+  width: 80%;
+  padding: 12px 0;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #626262;
+  border-bottom: 2px dotted transparent;
+  padding-bottom: 4px;
+  transition: border-bottom 0.33s linear;
+}
+
+.menu ul li a:hover,
+.menu ul li a:focus {
+  border-bottom: 2px dotted #626262;
+  outline: none;
+}
+
+/* ====== Banner ====== */
+.banner img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ====== Getaway Section ====== */
+.getaway {
+  padding: 40px 0;
+  background-color: #fafafa;
+}
+
+.category-label {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0 0 15px 0;
+  color: #626262;
+}
+
+.title {
+  margin: 0 0 25px 0;
+  font-size: 32px;
+  font-weight: 400;
+  color: #222;
+}
+
+.text {
+  margin: 0 0 40px 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #444;
+}
+
+.comment-link {
+  color: #626262;
+  text-decoration: none;
+  font-weight: 400;
+  border-bottom: 1px dotted #626262;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.comment-link:hover,
+.comment-link:focus {
+  color: #000;
+  border-bottom-color: #000;
+  outline: none;
+}
+
+/* ====== Blog Section ====== */
+.blog {
+  padding: 80px 0 100px;
+  background-color: #fff;
+}
+
+.blog-extra {
+  padding-top: 40px;
+}
+
+.blog-item {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  box-sizing: border-box;
+}
+
+.blog-item img {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.blog-item .category-label {
+  margin-bottom: 8px;
+  color: #888;
+  font-weight: 300;
+}
+
+.blog-item .title {
+  margin: 0 0 12px 0;
+  font-size: 22px;
+  font-weight: 400;
+  color: #222;
+}
+
+.blog-item .text {
+  margin: 0;
+  font-size: 15px;
+  color: #555;
+}
+
+/* ====== Newsletter Section ====== */
+ .newsletter {
+  padding: 60px 0;
+  background-color: #fafafa;
+}
+
+.signup {
+  text-align: center;
+}
+
+.s-h1 {
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.s-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.s-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px;
+}
+
+.s-form button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.s-form img {
+  width: 24px;
+  height: 24px;
+}
+
+/* ====== Load More Button ====== */
+.load-more {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.load-more button {
+  width: 180px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #626262;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  color: #626262;
+  cursor: pointer;
+  transition: background-color 0.33s linear, color 0.33s linear;
+  border-radius: 4px;
+}
+
+.load-more button:hover,
+.load-more button:focus {
+  background-color: #626262;
+  color: white;
+  outline: none;
+}
+
+/* ====== Footer ====== */
+.footer {
+  background-color: #f0f0f0;
+  padding: 30px 0;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  color: #222;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover,
+.footer ul li a:focus {
+  color: #626262;
+  outline: none;
+}
+
+.footer-right li span {
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.footer-right li a img {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
+.footer-right li a img:hover {
+  opacity: 0.7;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 991px) {
+  .logo, .menu {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .blog-item {
+    width: 100%;
+    margin: 15px 0;
+    float: none;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input[type="email"] {
+    border-radius: 4px 4px 0 0;
+    border-right: 1px solid #ccc;
+    margin-bottom: 8px;
+  }
+
+  .newsletter-form button {
+    border-radius: 0 0 4px 4px;
+    padding: 12px;
+  }
+}
